@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.removeLink .highcharts-credits{
+    display: none!important;
+}
+.removeLink .highcharts-no-tooltip{
+    display: none!important;
+}
+
