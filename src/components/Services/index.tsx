@@ -20,7 +20,10 @@ import image6 from "../../assets/images/simg6.png";
 import image7 from "../../assets/images/simg7.png";
 import image8 from "../../assets/images/simg8.png";
 import image9 from "../../assets/images/simg9.png";
+import image10 from "../../assets/images/simg10.png";
+import image11 from "../../assets/images/simh11.png";
 import { document, taxttime, titlesearch } from "src/utilities/constants";
+import Comiitment from "./Comiitment";
 const index = () => {
   const [tabs, setTabs] = useState<any>("1");
   return (
@@ -62,6 +65,18 @@ const index = () => {
           img3={image9}
           label="Tax Certification"
           text="Comprehensive tax reports combining essential assessor, tax agency and tax bill data that is validated for tax currency and data integrity, supported by the strongest network of regional specialists in the industry."
+          otherlabel=""
+          tabs={tabs}
+          setTabs={setTabs}
+        />
+      )}
+      {tabs == "4" && (
+        <Comiitment
+          other={taxttime}
+          img1={image10}
+          img2={image11}
+          label="Commitment Report"
+          text="A Commitment Report, in the context of a Residential Title search, is a crucial document provided by a title company or a title insurance provider. This report is a preliminary commitment to issue a title insurance policy, once specific conditions are met. It plays a vital role in the process of closing a real estate transaction. Here's what a Commitment Report typically includes:"
           otherlabel=""
           tabs={tabs}
           setTabs={setTabs}
