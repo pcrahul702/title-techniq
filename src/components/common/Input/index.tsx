@@ -52,7 +52,7 @@ export default function Input(props: PropTypes) {
         {labelText ? (
           <label
             htmlFor={id}
-            className={`text-sm  font-semibold block ${labelTextStyle}`}
+            className={`text-xs  font-normal block ${labelTextStyle}`}
           >
             {labelText} <span className="text-csGray">{subLabel}</span>
             {required && <span className="text-[#FF3B3B]">*</span>}
@@ -73,7 +73,7 @@ export default function Input(props: PropTypes) {
                 bg-white 
                 text-sm  
                 border ${
-                  focusError ? "border-csLightSkyBlue " : "border-red-500"
+                  focusError ? "border-[#D4D4D4] " : "border-red-500"
                 } 
                 outline-none focus:outline-none 
                 focus:shadow-md 

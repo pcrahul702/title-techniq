@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3400",
+    "dev": "next dev -p 3600",
     "build": "next build",
-    "start": "next start -p 3400",
+    "start": "next start -p 3600",
     "lint": "next lint",
     "build:staging": "env-cmd -f .env.local yarn build && yarn start",
     "build:prod": "env-cmd -f .env.production yarn build"
@@ -29,11 +29,14 @@
     "react-modal": "^3.15.1",
     "react-moment": "^1.1.3",
     "react-otp-input": "^2.4.0",
+    "react-player": "^2.13.0",
     "react-redux": "^8.0.2",
     "react-select": "^5.8.0",
+    "react-slick": "^0.29.0",
     "react-step-progress-bar": "^1.0.3",
     "react-toastify": "^9.1.3",
     "react-tooltip": "^5.21.5",
+    "slick-carousel": "^1.8.1",
     "yup": "^1.2.0"
   },
   "devDependencies": {

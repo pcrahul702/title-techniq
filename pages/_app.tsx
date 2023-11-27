@@ -5,6 +5,8 @@ import store from "src/store/store";
 import "react-toastify/dist/ReactToastify.css";
 import "react-tooltip/dist/react-tooltip.css";
 import { toast,ToastContainer } from 'react-toastify';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>

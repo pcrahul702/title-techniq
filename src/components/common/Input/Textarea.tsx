@@ -52,7 +52,7 @@ export default function Textarea(props: PropTypes) {
         {labelText ? (
           <label
             htmlFor={id}
-            className={`text-sm  font-medium block ${labelTextStyle}`}
+            className={`text-xs  font-normal block ${labelTextStyle}`}
           >
             {labelText} {required && <span className="text-red-500">*</span>}
           </label>

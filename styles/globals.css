@@ -2,12 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-.removeLink .highcharts-credits{
-    display: none!important;
+.slider{
+    position: relative; 
 }
-.removeLink .highcharts-no-tooltip{
-    display: none!important;
+.slider .next_arrow{
+    
+    position: absolute!important;
+    bottom: 0!important;
+    right: 50%!important;
+    cursor: pointer;
+}
+.slider .prev_arrow{
+    
+    position: absolute!important;
+    bottom: 0;
+    left: 45%
+}
+.slick-prev:before {
+    /* background-color: blue;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%; */
+}
+.slick-next:before {
+    /* background-color: blue; */
 }
 
+.slick-slide > div {
+    margin:0 20px;
+}
+/* .slick-arrow::before{
+    background-color: white!important;
+    color: red!important;
+    content: url('../src/assets/Icon/leftarrow.svg');
+   font-family: 'FontAwesome'!important;
+   position: absolute !important;
+} */

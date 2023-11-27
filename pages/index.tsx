@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { useEffect } from "react";
 import { useRouter } from "next/router";
-import Index from "src/components/Home/Index";
+import Index from "./Home"
 export default function Home() {
   const router = useRouter();
 

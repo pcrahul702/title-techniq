@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Poppins: "Poppins",
+        'league-spartan': ['League Spartan', 'sans-serif'],
       },
 
       gridTemplateColumns: {
@@ -17,7 +17,7 @@ module.exports = {
         cardAuto: "minmax(160px, 1fr)",
       },
       colors: {
-        csBlue: "#1F3D94",
+        csBlue: "#003F7C",
         csGray: "#8f9eca",
         csSkyBlue: "#2B84EA",
         csLightSkyBlue: "#BFDAF9",
