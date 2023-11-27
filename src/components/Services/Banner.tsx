@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import Image from "next/image";
-import HeroBanner from "../../assets/images/rec4.png";
+import HeroBanner from "../../assets/images/bg-2.png";
 import Leftarrow from "../../assets/Icon/leftarrow.svg";
 const Banner = () => {
   return (
