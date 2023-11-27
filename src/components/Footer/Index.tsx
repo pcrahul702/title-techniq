@@ -162,7 +162,7 @@ const Index = () => {
               Contact Us
             </h2>
             <nav className="list-none space-y-3">
-              <li className="flex  gap-2 ">
+              <li className="flex  gap-2 cus ">
                 <div onClick={handlemapclick}>
                   <svg
                     width="20"
