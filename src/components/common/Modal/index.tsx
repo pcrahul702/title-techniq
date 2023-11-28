@@ -11,6 +11,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
+
   },
 };
 interface ModalTypes {
@@ -43,16 +44,16 @@ export default function Index({
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         style={customStyles}
-        className={`p-0 absolute rounded-xl outline-none shadow-xl w-4/5 md:w-4/12 bg-white ${modalClass} overflow-y-auto overflow-x-auto `}
+        className={`p-0 absolute rounded-xl outline-none shadow-xl w-4/5   bg-white ${modalClass} overflow-y-auto overflow-x-auto `}
         overlayClassName="bg-[#000] fixed top-0 right-0 left-0 bottom-0 bg-opacity-50 z-20"
       >
         {header && (
           <div
             id="modal-header"
-            className={`border-b px-4 border-outlineGray py-3 relative ${headerClass} `}
+            className={`border-b-2 px-4 border-[#D4D4D4] py-3 relative ${headerClass} `}
           >
             <div
-              className={`text-csBlue py-2 font-semibold text-xl ${titleStyle}`}
+              className={`text-muted-muted-800 font-poppins font-semibold text-base leading-[125%] py-2  ${titleStyle}`}
             >
               {title}
             </div>
@@ -64,6 +65,7 @@ export default function Index({
           </div>
         )}
         <div className={`md:px-4 py-2 ${bodyClass}`}>{children}</div>
+        
       </Modal>
 
       <style jsx>{`

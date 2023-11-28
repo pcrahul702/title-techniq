@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Button from "../common/Button";
+import Modal from "../common/Modal";
 import Link from "next/link";
+import Input from "../common/Input";
 const Index = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div>
       <header>
@@ -397,6 +408,7 @@ const Index = () => {
                 <Button
                   color="csSkyBlue"
                   type="button"
+                  onClick={openModal}
                   className="!text-white xl:rounded-xl lg:rounded-lg bg-csBlue text-base xl:text-xl font-semibold px-5 py-4 cursor-pointer"
                 >
                   Join Our Abstractor Network
@@ -406,8 +418,51 @@ const Index = () => {
           </div>
         </nav>
       </header>
-      
-  
+      <Modal
+        closeModal={closeModal}
+        isModalOpen={isModalOpen}
+        crossStyle={"bg-black text-white rounded-full"}
+        title="ABSTRACTOR ENGAGEMENT & ONBOARDING FORM"
+        modalClass="overflow-scroll"
+      >
+        <div className="lg:w-[756px] p-6 mx-auto">
+          <div className="lg:w-[708px] mx-auto border border-[#BAE6FD] bg-[#F0F9FF] p-4 text-[#075985] text-base font-normal leading-[150%]">
+            <div>
+              Please take a moment to ensure you have completed the Vendor
+              Engagement & Onboarding form and attached all required
+              documentation. Kindly ensure to include the following:
+            </div>
+            <div className="ms-4">
+              <ul className="list-disc">
+                <li>Coverage & Pricing sheet. </li>
+                <li>All required licenses and/or Certifications. </li>
+                <li>Errors and Omissions Insurance (as applicable). </li>
+                <li>
+                  Your recently signed Form W-9 for Taxpayer Identification
+                  Number and Certification. (You may download a copy from IRS
+                  Website)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className=" mt-6 flex flex-col gap-4">
+            <div className=" grid grid-cols-2 gap-4">
+              <Input labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " labelText="Company Name " subLabel="(Same as it reflects on you W-9)" placeHolder="Company Name" className="w-full p-4" />
+              <Input labelText="Website If Any" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Website" className="w-full p-4" />
+            </div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] ">Business Address</div>
+            <div className="grid grid-cols-3 gap-4">
+            <Input labelText="Street Address" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Address" className="w-full p-4" />
+              <Input labelText="City, State" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="City and State" className="w-full p-4" />
+              <Input labelText="Zip" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Zip Code" className="w-full p-4" />
+            </div>
+
+          </div>
+        </div>
+        <div className="border-t-2 border-[#D4D4D4] py-2 px-6 flex justify-end">
+          <Button className="bg-[#003F7C] text-white text-center px-8 py-3 rounded-lg w-[114px] semibold placeholder-text-sm">Submit</Button>
+        </div>
+      </Modal>
     </div>
   );
 };
