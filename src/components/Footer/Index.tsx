@@ -163,7 +163,7 @@ const Index = () => {
             </h2>
             <nav className="list-none space-y-3">
               <li className="flex  gap-2 cus ">
-                <div onClick={handlemapclick}>
+                <div onClick={handlemapclick} className="cursor-pointer">
                   <svg
                     width="20"
                     height="21"
@@ -247,7 +247,7 @@ const Index = () => {
         <div className=" text-white text-sm font-normal leading-5">
           © 2020 All right reserved to Title Techniq
         </div>
-        <div className="flex justify-between gap-12 text-white text-base font-medium leading-6">
+        <div className="flex justify-between gap-12 text-white text-base font-medium cursor-pointer leading-6">
           <div>Privacy policy </div>
           <div> Terms of use</div>
         </div>
