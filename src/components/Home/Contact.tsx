@@ -14,33 +14,37 @@ const Contact = () => {
             labelText="Full Name"
             placeHolder="Enter Here"
             className="w-full p-3"
+            height="h-12"
             labelTextStyle="text-[#737373] "
           />
           <Input
             labelText="Company Name"
             placeHolder="Enter Here"
             className="w-full p-3"
+            height="h-12"
             labelTextStyle="text-[#737373] "
           />
           <Input
             labelText="Business Email "
             placeHolder="Enter Here"
             className="w-full p-3"
+            height="h-12"
             labelTextStyle="text-[#737373] "
           />
           <Input
             labelText="Mobile Phone"
             placeHolder="xxx - xxx - xxxx"
             className="w-full p-3"
+            height="h-12"
             labelTextStyle="text-[#737373] "
           />
         </div>
         <div className="mt-10">
-          <Textarea
+          <Input
             labelText="Description"
-            className="w-full p-3 "
+            className="w-full p-3  "
             labelTextStyle="text-[#737373] "
-            cols={10}
+            height="h-20"
             placeHolder="write Here"
             value=""
           />

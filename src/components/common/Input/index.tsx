@@ -22,6 +22,7 @@ interface PropTypes {
   nonEditable?: boolean;
   subLabel?: string;
   focusError?: boolean;
+  height?:string;
 }
 
 export default function Input(props: PropTypes) {
@@ -42,6 +43,7 @@ export default function Input(props: PropTypes) {
     wrapperClass,
     error,
     onBlur,
+    height,
     width,
     nonEditable = false,
     focusError = true,
@@ -79,7 +81,7 @@ export default function Input(props: PropTypes) {
                 focus:shadow-md 
                 mt-2
                 rounded-md
-                h-10
+                ${height}
                 ${width}
                 ${fullWidth && "w-full"} 
                 ${className}

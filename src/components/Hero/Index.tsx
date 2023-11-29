@@ -4,25 +4,16 @@ import Image from 'next/image';
 import HeroBanner from '../../assets/images/herobanner.png'
 import Leftarrow from "../../assets/Icon/leftarrow.svg"
 import Model from '../common/Modal'
+
 const Index = () => {
   return (
     <div className="relative h-screen">
-      {/* Video Background */}
-      {/* <ReactPlayer
-        url="/assets/hero.mp4" // Corrected the video URL
-        playing={true}
-        loop={true}
-        muted={true}
-        width="100%"
-        height="100%"
-        className="absolute top-0 left-0"
-      /> */}
-    {/* <video src="./assets/hero.mp4" className="absolute top-0 left-0"  width="100%"
-        height="100%"/> */}
-        <Image src={HeroBanner}  
+      <video src="/video.mp4" autoPlay loop muted className='absolute top-0 left-0 object-cover w-full h-full'/>
+      
+        {/* <Image src={HeroBanner}  
          className="absolute top-0 left-0 object-cover w-full h-full"
          layout="fill"
-         alt="Hero Banner"/>
+         alt="Hero Banner"/> */}
       {/* Content */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full">
         <div className="text-white text-center  font-league-spartan text-[40px] font-normal  uppercase">
