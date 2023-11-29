@@ -4,8 +4,9 @@ import Image from 'next/image';
 import HeroBanner from '../../assets/images/herobanner.png'
 import Leftarrow from "../../assets/Icon/leftarrow.svg"
 import Model from '../common/Modal'
-
+import { useRouter } from 'next/router';
 const Index = () => {
+  const {push}=useRouter()
   return (
     <div className="relative h-screen">
       <video src="/video.mp4" autoPlay loop muted className='absolute top-0 left-0 object-cover w-full h-full'/>
@@ -22,7 +23,9 @@ const Index = () => {
         <div className='font-normal text-[40px] text-center text-white mb-[14px]'>Experience the power of nationwide <span className='text-[32px]'>On-site</span> <div>Abstractors!</div></div>
         <p className="text-white text-center text-2xl font-normal">Your key to Seamless Residential Title Searches & Document retrievals in every County, across the US.</p>
         <div className='flex  justify-center gap-6 mt-[72px]'>
-          <button className="w-[157px]  px-5 py-4 text-center  bg-blue-500 text-white  rounded-lg text-base font-semibold" >Let's Talk</button>
+          <button className="w-[157px]  px-5 py-4 text-center  bg-blue-500 text-white  rounded-lg text-base font-semibold" onClick={()=>{
+            push("/#contact")
+          }} >Let's Talk</button>
           <button className="w-[157px]  px-5 py-4 text-center border-white border text-white  rounded-lg text-base font-semibold mr-2">Get Started<Image src={Leftarrow} alt="Left Arrow" width={16} height={16} /></button>
         </div>
       </div>

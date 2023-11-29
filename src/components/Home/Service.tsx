@@ -1,7 +1,17 @@
 import React from "react";
 import search from "../../assets/Icon/search.svg";
 import Image from "next/image";
+import { useRouter } from 'next/router';
 const Service = () => {
+  const {push}=useRouter()
+ 
+  const handleservice=(tabs:any)=>{
+  push(({
+    pathname: '/service',
+    query: { tabs: tabs },
+  }))
+
+  }
   return (
     <div className="p-20  bg-[#FCF5FF]">
       <div className="flex flex-col items-center  gap-4  max-w-[768px] mx-auto">
@@ -59,7 +69,7 @@ const Service = () => {
             </div>
             <div className=" mt-6">
               <div className="flex justify-center items-center">
-                <div className="text-base font-semibold">Read More</div>{" "}
+                <div className="text-base font-semibold cursor-pointer" onClick={()=>{handleservice('1')}}>Read More</div>{" "}
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +138,7 @@ const Service = () => {
             </div>
             <div className=" mt-6">
               <div className="flex justify-center items-center">
-                <div className="text-base font-semibold">Read More</div>{" "}
+                <div className="text-base font-semibold cursor-pointer" onClick={()=>{handleservice('2')}}>Read More</div>{" "}
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -198,7 +208,7 @@ const Service = () => {
             </div>
             <div className=" mt-6">
               <div className="flex justify-center items-center">
-                <div className="text-base font-semibold">Read More</div>{" "}
+                <div className="text-base font-semibold cursor-pointer" onClick={()=>{handleservice('4')}}>Read More</div>{" "}
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +277,7 @@ const Service = () => {
             </div>
             <div className=" mt-6">
               <div className="flex justify-center items-center">
-                <div className="text-base font-semibold">Read More</div>{" "}
+                <div className="text-base font-semibold cursor-pointer"  onClick={()=>{handleservice('3')}}>Read More</div>{" "}
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
