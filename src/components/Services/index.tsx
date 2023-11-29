@@ -93,7 +93,7 @@ const index = () => {
         />
       )}
 
-      <Service />
+      {/* <Service /> */}
       <Card
         imgurl={goal}
         label="Transform Your Business"

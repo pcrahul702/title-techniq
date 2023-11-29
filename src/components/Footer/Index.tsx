@@ -2,8 +2,15 @@ import React from "react";
 import Button from "../common/Button";
 import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
+import { useRouter } from 'next/router';
 const Index = () => {
+  const {push}=useRouter()
+ 
+  const handleservice=(tabs:any)=>{
+  push(({
+    pathname: '/service',
+    query: { tabs: tabs },
+  }))}
   const handleButtonClick = () => {
     // Specify the URL you want to navigate to
     const linkUrl = "https://www.linkedin.com/company/title-techniq/";
@@ -136,22 +143,22 @@ const Index = () => {
             </h2>
             <nav className="list-none space-y-3">
               <li>
-                <a className="text-white leading-[29px] text-base font-normal opacity-75">
+                <a className="text-white leading-[29px] text-base font-normal opacity-75 cursor-pointer" onClick={()=>{handleservice('1')}}>
                   Title Search
                 </a>
               </li>
               <li>
-                <a className="text-white leading-[29px] text-base font-normal opacity-75">
+                <a className="text-white leading-[29px] text-base font-normal opacity-75 cursor-pointer" onClick={()=>{handleservice('2')}}>
                   Document Retrieval
                 </a>
               </li>
               <li>
-                <a className="text-white leading-[29px] text-base font-normal opacity-75">
+                <a className="text-white leading-[29px] text-base font-normal opacity-75 cursor-pointer" onClick={()=>{handleservice('3')}}>
                   Tax Certification
                 </a>
               </li>
               <li>
-                <a className="text-white leading-[29px] text-base font-normal opacity-75">
+                <a className="text-white leading-[29px] text-base font-normal opacity-75 cursor-pointer" onClick={()=>{handleservice('4')}}>
                   Commitment Report
                 </a>
               </li>
