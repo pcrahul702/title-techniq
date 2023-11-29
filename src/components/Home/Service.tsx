@@ -299,8 +299,8 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div className="mt-16 flex justify-center items-center gap-2">
-        {/* <div className="text-[#003F7C] text-base">Explore All</div> */}
+      {/* <div className="mt-16 flex justify-center items-center gap-2">
+        <div className="text-[#003F7C] text-base">Explore All</div>
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -327,7 +327,7 @@ const Service = () => {
             </g>
           </svg>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
