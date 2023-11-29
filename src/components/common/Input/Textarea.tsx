@@ -43,7 +43,7 @@ export default function Textarea(props: PropTypes) {
     width,
     nonEditable = false,
     rows = 10,
-    cols = 50,
+    cols = 2,
   } = props;
 
   return (

@@ -401,7 +401,7 @@ const Index = () => {
                   <Link href="/service">Our Services</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <Link href="/#contact">Contact Us</Link>
+                  <Link href="/#contact">Get in touch</Link>
                 </li>
               </ul>
               <div>

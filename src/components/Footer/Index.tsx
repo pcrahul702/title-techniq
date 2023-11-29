@@ -247,10 +247,10 @@ const Index = () => {
         <div className=" text-white text-sm font-normal leading-5">
           © 2020 All right reserved to Title Techniq
         </div>
-        <div className="flex justify-between gap-12 text-white text-base font-medium cursor-pointer leading-6">
+        {/* <div className="flex justify-between gap-12 text-white text-base font-medium cursor-pointer leading-6">
           <div>Privacy policy </div>
           <div> Terms of use</div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

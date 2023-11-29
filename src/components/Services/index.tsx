@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Header from "../Header/Index";
 import Footer from "../Footer/Index";
 import Service from "../Home/Service";
@@ -24,8 +24,18 @@ import image10 from "../../assets/images/simg10.png";
 import image11 from "../../assets/images/simh11.png";
 import { document, taxttime, titlesearch } from "src/utilities/constants";
 import Comiitment from "./Comiitment";
+import { useRouter } from 'next/router';
 const index = () => {
-  const [tabs, setTabs] = useState<any>("1");
+  const router = useRouter();
+  const param = router.query.tabs;
+  console.log(param)
+  const [tabs, setTabs] = useState<any>(param);
+  useEffect(() => {
+    // Check if the query parameter is present before updating state
+    if (param !== undefined) {
+      setTabs(param);
+    }
+  }, [param]);
   return (
     <div>
       <Header />

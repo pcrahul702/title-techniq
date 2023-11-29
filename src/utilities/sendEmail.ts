@@ -11,8 +11,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const transporter: Transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'your-email@gmail.com',
-        pass: 'your-email-password',
+        user: 'devdeveloper330@gmail.com',
+        pass: 'Kumar@702',
       },
     });
 
