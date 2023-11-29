@@ -8,6 +8,8 @@ import Contact from "./Contact";
 import Testimonial from "./Testimonial";
 import Faq from "./Faq";
 import About from "./About";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Index = () => {
   return (
     <div>
