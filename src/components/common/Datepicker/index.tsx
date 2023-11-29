@@ -59,7 +59,6 @@ export default function Datepicker({
         required
         maxDate={new Date()}
         popperPlacement="top"
-        value={value}
         name={name}
       />
       <div className={`absolute right-2 bottom-1 ${imgCss}`}>
