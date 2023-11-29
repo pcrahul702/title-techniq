@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
+    "@types/nodemailer": "^6.4.14",
     "axios": "^0.27.2",
     "env-cmd": "^10.1.0",
     "formik": "^2.4.2",
@@ -19,6 +20,7 @@
     "highcharts-react-official": "^3.2.1",
     "moment": "^2.29.2",
     "next": "12.1.6",
+    "nodemailer": "^6.9.7",
     "react": "18.1.0",
     "react-calendar": "^4.6.0",
     "react-circular-progressbar": "^2.1.0",
