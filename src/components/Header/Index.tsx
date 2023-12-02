@@ -4,6 +4,7 @@ import Button from "../common/Button";
 import Modal from "../common/Modal";
 import Link from "next/link";
 import Input from "../common/Input";
+import Checkbox from "../common/CheckBox";
 const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -423,7 +424,8 @@ const Index = () => {
         isModalOpen={isModalOpen}
         crossStyle={"bg-black text-white rounded-full"}
         title="ABSTRACTOR ENGAGEMENT & ONBOARDING FORM"
-        modalClass="overflow-scroll"
+        // bodyClass="overflow-scroll"
+        modalClass="h-[80%]"
       >
         <div className="lg:w-[756px] p-6 mx-auto">
           <div className="lg:w-[708px] mx-auto border border-[#BAE6FD] bg-[#F0F9FF] p-4 text-[#075985] text-base font-normal leading-[150%]">
@@ -456,9 +458,15 @@ const Index = () => {
               <Input labelText="City, State" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="City and State" className="w-full p-4" />
               <Input labelText="Zip" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Zip Code" className="w-full p-4" />
             </div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] "><Checkbox
+            label="Is your Mailing address the same as your Business Address? "
+            value="checked"
+            /></div>
+
 
           </div>
         </div>
+       
         <div className="border-t-2 border-[#D4D4D4] py-2 px-6 flex justify-end">
           <Button className="bg-[#003F7C] text-white text-center px-8 py-3 rounded-lg w-[114px] semibold placeholder-text-sm">Submit</Button>
         </div>
