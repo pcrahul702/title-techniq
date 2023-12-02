@@ -158,25 +158,27 @@ const Index = () => {
               Important Links
             </h2>
             <nav className="list-none space-y-3">
-              <li>
-                <a className="text-white leading-[29px] text-base font-normal opacity-75">
-                  Home
-                </a>
+              <li  className="text-white leading-[29px] text-base font-normal opacity-75">
+                <Link href="/" aria-current="page">
+                    Home
+                  </Link>
               </li>
-              <li>
-                <a className="text-white leading-[29px] text-base font-normal opacity-75">
-                  About Us
-                </a>
+              <li  className="text-white leading-[29px] text-base font-normal opacity-75">
+                <Link href="/#about" aria-current="page">
+                About Us
+                  </Link>
               </li>
-              <li>
-                <a className="text-white leading-[29px] text-base font-normal opacity-75">
-                  FAQ'S
-                </a>
+              <li  className="text-white leading-[29px] text-base font-normal opacity-75">
+                <Link href="/#faq" aria-current="page">
+                FAQ'S
+                  </Link>
               </li>
-              <li>
-                <a className="text-white leading-[29px] text-base font-normal opacity-75">
-                  Join Our Abstractor Network
-                </a>
+            
+              <li className="text-white leading-[29px] text-base font-normal opacity-75" >
+              <Link href="/#contact">Get in touch</Link>
+              </li>
+              <li className="text-white leading-[29px] text-base font-normal opacity-75" >
+              <Link href="/#header"> Join Our Abstractor Network</Link>
               </li>
             </nav>
           </div>
@@ -228,7 +230,7 @@ const Index = () => {
                   </svg>
                 </div>
                 <div className="text-base font-normal text-[#fff] opacity-75">
-                  G-09, street name , City , Country , pincode.
+                2120 Carey Ave, Cheyenne, WY 82001
                 </div>
               </li>
               <li className="flex  gap-2 ">
@@ -247,7 +249,7 @@ const Index = () => {
                   </svg>
                 </div>
                 <div className="text-base font-normal text-[#fff] opacity-75">
-                  +1 78903200
+                307-203-1837
                 </div>
               </li>
               <li className="flex  gap-2">
@@ -266,7 +268,7 @@ const Index = () => {
                   </svg>
                 </div>
                 <div className="text-base font-normal text-[#fff] opacity-75">
-                  titletechnique@gmail.com
+                info@titletechniq.com
                 </div>
               </li>
               <li className="flex  gap-2">
@@ -285,7 +287,7 @@ const Index = () => {
                   </svg>
                 </div>
                 <div className="text-base font-normal text-[#fff] opacity-75">
-                  +91-456-7890
+                307-207-5083
                 </div>
               </li>
              

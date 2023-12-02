@@ -3,7 +3,7 @@ import Accourdian from "./Accourdian";
 
 const Faq = () => {
   return (
-    <div>
+    <div id="faq">
       
         <div className="container px-5 mt-10 mx-auto">
           <div className="flex flex-col lg:max-w-[768px] md:max-w-[520px] mx-auto gap-4">

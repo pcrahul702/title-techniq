@@ -17,7 +17,7 @@ const Index = () => {
   };
   return (
     <div>
-      <header>
+      <header id='header'>
         <nav className="bg-white border-gray-200 px-20   py-6 ">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
             <a href="" className="flex items-center">
@@ -462,7 +462,22 @@ const Index = () => {
             label="Is your Mailing address the same as your Business Address? "
             value="checked"
             /></div>
-
+<div className="text-sm font-medium leading-[150%] text-[#000] ">Mailing Address</div>
+            <div className="grid grid-cols-3 gap-4">
+            <Input labelText="Street Address" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Address" className="w-full p-4" />
+              <Input labelText="City, State" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="City and State" className="w-full p-4" />
+              <Input labelText="Zip" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Zip Code" className="w-full p-4" />
+            </div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] "><Checkbox
+            label="Add Secondary Contact? "
+            value="checked"
+            /></div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] ">Secondary Contact</div>
+            <div className="grid grid-cols-3 gap-4">
+            <Input labelText="Full Name" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="First Name & Last Name" className="w-full p-4" />
+              <Input labelText="City, State" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="City and State" className="w-full p-4" />
+              <Input labelText="Zip" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Zip Code" className="w-full p-4" />
+            </div>
 
           </div>
         </div>
