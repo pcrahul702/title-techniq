@@ -32,7 +32,7 @@ function Accourdian() {
           </span>
         </div>
         {/* {one && <div className="border border-csSkyBlue "></div>} */}
-        {one && <div className="px-10 py-3">YES, we carry E&O.</div>}
+        {one && <div className="px-10 py-3 text-xl">YES, we carry E&O.</div>}
       </div>
       <div className={`${two ? "" : ""}  rounded-lg `}>
         <div className="flex justify-between px-5 py-3">
@@ -48,7 +48,7 @@ function Accourdian() {
           </span>
         </div>
         {/* {two && <div className="border border-csSkyBlue "></div>} */}
-        {two && <div className="px-10 py-3">We cover 38 States.</div>}
+        {two && <div className="px-10 py-3 text-xl">We cover 38 States.</div>}
       </div>
       <div className={`${three ? "" : ""}  rounded-lg `}>
         <div className="flex justify-between px-5 py-3">
@@ -65,7 +65,7 @@ function Accourdian() {
         </div>
         {/* {three && <div className="border border-csSkyBlue "></div>} */}
         {three && (
-          <div className="px-10 py-3">
+          <div className="px-10 py-3 text-xl">
             Revolutionizing Title Searches Nationwide with Our Unparalleled
             Network of On-Site Abstractors!
           </div>
@@ -86,7 +86,7 @@ function Accourdian() {
         </div>
         {/* {four && <div className="border border-csSkyBlue "></div>} */}
         {four && (
-          <div className="px-10 py-3">Our average response time is 2 hours.</div>
+          <div className="px-10 py-3 text-xl">Our average response time is 2 hours.</div>
         )}
       </div>
       <div className={`${five ? "" : ""}  rounded-lg `}>
@@ -120,7 +120,7 @@ function Accourdian() {
         </div>
         {/* {six && <div className="border border-csSkyBlue "></div>} */}
         {six && (
-          <div className="px-10 py-3">
+          <div className="px-10 py-3 text-xl">
            Your Title Search, Your way! Precision and Reliability is Our way!
           </div>
         )}
@@ -140,7 +140,7 @@ function Accourdian() {
         </div>
         {/* {seven && <div className="border border-csSkyBlue "></div>} */}
         {seven && (
-          <div className="px-10 py-3">
+          <div className="px-10 py-3 text-xl">
            We update each order status before you ask.
           </div>
         )}
@@ -160,7 +160,7 @@ function Accourdian() {
         </div>
         {/* {eight && <div className="border border-csSkyBlue "></div>} */}
         {eight && (
-          <div className="px-10 py-3">
+          <div className="px-10 py-3 text-xl">
          We provide order acceptance confirmation within 1 hour and convey ETA within 4 hours of assignment.
           </div>
         )}
@@ -180,7 +180,7 @@ function Accourdian() {
         </div>
         {/* {nine && <div className="border border-csSkyBlue "></div>} */}
         {nine && (
-          <div className="px-10 py-3">
+          <div className="px-10 py-3 text-xl">
           We can be reached at orders@titletechniq.com
           </div>
         )}
@@ -200,7 +200,7 @@ function Accourdian() {
         </div>
         {/* {ten && <div className="border border-csSkyBlue "></div>} */}
         {ten && (
-          <div className="px-10 py-3">
+          <div className="px-10 py-3 text-xl">
            YES ( Schedule a Call )
           </div>
         )}
@@ -220,7 +220,7 @@ function Accourdian() {
         </div>
         {/* {eleven && <div className="border border-csSkyBlue "></div>} */}
         {eleven && (
-          <div className="px-10 py-3">
+          <div className="px-10 py-3 text-xl">
           Please fill this form and we will reach out to you.
           </div>
         )}

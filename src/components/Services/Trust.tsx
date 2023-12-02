@@ -4,8 +4,8 @@ import Trustcard from "./Trustcard";
 const Trust = () => {
   return (
     <div>
-      <div className="max-w-[1120px] mx-auto my-20 flex flex-col gap-12">
-        <div className="w-[768px] mx-auto">
+      <div className="lg:max-w-[1120px] md:max-w-[700px] max-w-[380px] mx-auto my-20 flex flex-col gap-12">
+        <div className="lg:w-[768px] md:w-[580px] w-[380px] mx-auto">
           <div className="text-center text-[36px] font-semibold leading-[150%]">
             Why Trust Us
           </div>

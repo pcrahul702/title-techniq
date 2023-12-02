@@ -9,27 +9,28 @@
     
     position: absolute!important;
     bottom: 0!important;
-    right: 50%!important;
+    right: 40%!important;
     cursor: pointer;
 }
 .slider .prev_arrow{
     
     position: absolute!important;
     bottom: 0;
-    left: 45%
+    left: 50%!important
 }
 .slick-prev:before {
-    /* background-color: blue;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%; */
+   
+    display: none;
+
 }
 .slick-next:before {
     /* background-color: blue; */
+    display: none;
+    
 }
 
 .slick-slide > div {
-    margin:0 20px;
+    margin:0 50px;
 }
 /* .slick-arrow::before{
     background-color: white!important;

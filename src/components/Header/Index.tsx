@@ -5,6 +5,7 @@ import Modal from "../common/Modal";
 import Link from "next/link";
 import Input from "../common/Input";
 import Checkbox from "../common/CheckBox";
+
 const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -17,7 +18,7 @@ const Index = () => {
   };
   return (
     <div>
-      <header id='header'>
+      <header id="header">
         <nav className="bg-white border-gray-200 px-20   py-6 ">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
             <a href="" className="flex items-center">
@@ -449,41 +450,271 @@ const Index = () => {
           </div>
           <div className=" mt-6 flex flex-col gap-4">
             <div className=" grid grid-cols-2 gap-4">
-              <Input labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " labelText="Company Name " subLabel="(Same as it reflects on you W-9)" placeHolder="Company Name" className="w-full p-4" />
-              <Input labelText="Website If Any" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Website" className="w-full p-4" />
+              <Input
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                labelText="Company Name "
+                subLabel="(Same as it reflects on you W-9)"
+                placeHolder="Company Name"
+                className="w-full p-4"
+              />
+              <Input
+                labelText="Website If Any"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="Website"
+                className="w-full p-4"
+              />
             </div>
-            <div className="text-sm font-medium leading-[150%] text-[#000] ">Business Address</div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] ">
+              Business Address
+            </div>
             <div className="grid grid-cols-3 gap-4">
-            <Input labelText="Street Address" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Address" className="w-full p-4" />
-              <Input labelText="City, State" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="City and State" className="w-full p-4" />
-              <Input labelText="Zip" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Zip Code" className="w-full p-4" />
+              <Input
+                labelText="Street Address"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="Address"
+                className="w-full p-4"
+              />
+              <Input
+                labelText="City, State"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="City and State"
+                className="w-full p-4"
+              />
+              <Input
+                labelText="Zip"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="Zip Code"
+                className="w-full p-4"
+              />
             </div>
-            <div className="text-sm font-medium leading-[150%] text-[#000] "><Checkbox
-            label="Is your Mailing address the same as your Business Address? "
-            value="checked"
-            /></div>
-<div className="text-sm font-medium leading-[150%] text-[#000] ">Mailing Address</div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] ">
+              <Checkbox
+                label="Is your Mailing address the same as your Business Address? "
+                value="checked"
+              />
+            </div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] ">
+              Mailing Address
+            </div>
             <div className="grid grid-cols-3 gap-4">
-            <Input labelText="Street Address" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Address" className="w-full p-4" />
-              <Input labelText="City, State" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="City and State" className="w-full p-4" />
-              <Input labelText="Zip" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Zip Code" className="w-full p-4" />
+              <Input
+                labelText="Street Address"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="Address"
+                className="w-full p-4"
+              />
+              <Input
+                labelText="City, State"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="City and State"
+                className="w-full p-4"
+              />
+              <Input
+                labelText="Zip"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="Zip Code"
+                className="w-full p-4"
+              />
             </div>
-            <div className="text-sm font-medium leading-[150%] text-[#000] "><Checkbox
-            label="Add Secondary Contact? "
-            value="checked"
-            /></div>
-            <div className="text-sm font-medium leading-[150%] text-[#000] ">Secondary Contact</div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] ">
+              <Checkbox label="Add Secondary Contact? " value="checked" />
+            </div>
+            <div className="text-sm font-medium leading-[150%] text-[#000] ">
+              Secondary Contact
+            </div>
             <div className="grid grid-cols-3 gap-4">
-            <Input labelText="Full Name" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="First Name & Last Name" className="w-full p-4" />
-              <Input labelText="City, State" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="City and State" className="w-full p-4" />
-              <Input labelText="Zip" labelTextStyle="text-xs font-normal text-[#000] leading-[150%] " placeHolder="Zip Code" className="w-full p-4" />
+              <Input
+                labelText="Full Name"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="First Name & Last Name"
+                className="w-full p-4"
+              />
+              <Input
+                labelText="City, State"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="City and State"
+                className="w-full p-4"
+              />
+              <Input
+                labelText="Zip"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="Zip Code"
+                className="w-full p-4"
+              />
             </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="text-[#737373] text-xs">Do you have E&O insurance? If yes, please attach a copy of current license (Max Size - 2MB)</label>
+                <div className="flex justify-between item-center mt-4">
+                  <div className="flex gap-2 items-center">
+                    <label>Yes</label>
+                    <input type="checkbox" className="w-5 h-5" />
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <label>No</label>
+                    <input type="checkbox" className="w-5 h-5" />
+                  </div>
+                  <div className="flex gap-2  items-center">
+                    <p>Upload</p>
+                    <p><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_760_1312" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                        <rect y="0.5" width="16" height="16" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_760_1312)">
+                        <path d="M3.9974 13.8333C3.63073 13.8333 3.31684 13.7027 3.05573 13.4416C2.79462 13.1805 2.66406 12.8666 2.66406 12.5V11.1666C2.66406 10.9777 2.72795 10.8194 2.85573 10.6916C2.98351 10.5638 3.14184 10.5 3.33073 10.5C3.51962 10.5 3.67795 10.5638 3.80573 10.6916C3.93351 10.8194 3.9974 10.9777 3.9974 11.1666V12.5H11.9974V11.1666C11.9974 10.9777 12.0613 10.8194 12.1891 10.6916C12.3168 10.5638 12.4752 10.5 12.6641 10.5C12.853 10.5 13.0113 10.5638 13.1391 10.6916C13.2668 10.8194 13.3307 10.9777 13.3307 11.1666V12.5C13.3307 12.8666 13.2002 13.1805 12.9391 13.4416C12.678 13.7027 12.3641 13.8333 11.9974 13.8333H3.9974ZM7.33073 5.73328L6.08073 6.98328C5.9474 7.11662 5.78906 7.18051 5.60573 7.17495C5.4224 7.1694 5.26406 7.09995 5.13073 6.96662C5.00851 6.83328 4.94462 6.67773 4.93906 6.49995C4.93351 6.32217 4.9974 6.16662 5.13073 6.03328L7.53073 3.63328C7.5974 3.56662 7.66962 3.5194 7.7474 3.49162C7.82517 3.46384 7.90851 3.44995 7.9974 3.44995C8.08629 3.44995 8.16962 3.46384 8.2474 3.49162C8.32517 3.5194 8.3974 3.56662 8.46406 3.63328L10.8641 6.03328C10.9974 6.16662 11.0613 6.32217 11.0557 6.49995C11.0502 6.67773 10.9863 6.83328 10.8641 6.96662C10.7307 7.09995 10.5724 7.1694 10.3891 7.17495C10.2057 7.18051 10.0474 7.11662 9.91406 6.98328L8.66406 5.73328V10.5C8.66406 10.6888 8.60017 10.8472 8.4724 10.975C8.34462 11.1027 8.18629 11.1666 7.9974 11.1666C7.80851 11.1666 7.65017 11.1027 7.5224 10.975C7.39462 10.8472 7.33073 10.6888 7.33073 10.5V5.73328Z" fill="#003F7C" />
+                      </g>
+                    </svg>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p className="text-[#737373] text-xs">Please upload your Form W-9</p>
+                  <p className="text-[#005DB4]">(https://www.irs.gov/pub/irs-pdf/fw9.pdf)</p>
+                  <div className="flex justify-end items-start">
+                    <div className="flex gap-2  items-center mt-4">
+                      <p>Upload</p>
+                      <p><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_760_1312" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                          <rect y="0.5" width="16" height="16" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_760_1312)">
+                          <path d="M3.9974 13.8333C3.63073 13.8333 3.31684 13.7027 3.05573 13.4416C2.79462 13.1805 2.66406 12.8666 2.66406 12.5V11.1666C2.66406 10.9777 2.72795 10.8194 2.85573 10.6916C2.98351 10.5638 3.14184 10.5 3.33073 10.5C3.51962 10.5 3.67795 10.5638 3.80573 10.6916C3.93351 10.8194 3.9974 10.9777 3.9974 11.1666V12.5H11.9974V11.1666C11.9974 10.9777 12.0613 10.8194 12.1891 10.6916C12.3168 10.5638 12.4752 10.5 12.6641 10.5C12.853 10.5 13.0113 10.5638 13.1391 10.6916C13.2668 10.8194 13.3307 10.9777 13.3307 11.1666V12.5C13.3307 12.8666 13.2002 13.1805 12.9391 13.4416C12.678 13.7027 12.3641 13.8333 11.9974 13.8333H3.9974ZM7.33073 5.73328L6.08073 6.98328C5.9474 7.11662 5.78906 7.18051 5.60573 7.17495C5.4224 7.1694 5.26406 7.09995 5.13073 6.96662C5.00851 6.83328 4.94462 6.67773 4.93906 6.49995C4.93351 6.32217 4.9974 6.16662 5.13073 6.03328L7.53073 3.63328C7.5974 3.56662 7.66962 3.5194 7.7474 3.49162C7.82517 3.46384 7.90851 3.44995 7.9974 3.44995C8.08629 3.44995 8.16962 3.46384 8.2474 3.49162C8.32517 3.5194 8.3974 3.56662 8.46406 3.63328L10.8641 6.03328C10.9974 6.16662 11.0613 6.32217 11.0557 6.49995C11.0502 6.67773 10.9863 6.83328 10.8641 6.96662C10.7307 7.09995 10.5724 7.1694 10.3891 7.17495C10.2057 7.18051 10.0474 7.11662 9.91406 6.98328L8.66406 5.73328V10.5C8.66406 10.6888 8.60017 10.8472 8.4724 10.975C8.34462 11.1027 8.18629 11.1666 7.9974 11.1666C7.80851 11.1666 7.65017 11.1027 7.5224 10.975C7.39462 10.8472 7.33073 10.6888 7.33073 10.5V5.73328Z" fill="#003F7C" />
+                        </g>
+                      </svg>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="text-[#737373] text-xs">Are you or the company licensed? If yes, please attach a copy of current license (Max Size - 2MB)</label>
+                <div className="flex justify-between item-center mt-4">
+                  <div className="flex gap-2 items-center">
+                    <label>Yes</label>
+                    <input type="checkbox" className="w-5 h-5" />
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <label>No</label>
+                    <input type="checkbox" className="w-5 h-5" />
+                  </div>
+                  <div className="flex gap-2  items-center">
+                    <p>Upload</p>
+                    <p><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_760_1312" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                        <rect y="0.5" width="16" height="16" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_760_1312)">
+                        <path d="M3.9974 13.8333C3.63073 13.8333 3.31684 13.7027 3.05573 13.4416C2.79462 13.1805 2.66406 12.8666 2.66406 12.5V11.1666C2.66406 10.9777 2.72795 10.8194 2.85573 10.6916C2.98351 10.5638 3.14184 10.5 3.33073 10.5C3.51962 10.5 3.67795 10.5638 3.80573 10.6916C3.93351 10.8194 3.9974 10.9777 3.9974 11.1666V12.5H11.9974V11.1666C11.9974 10.9777 12.0613 10.8194 12.1891 10.6916C12.3168 10.5638 12.4752 10.5 12.6641 10.5C12.853 10.5 13.0113 10.5638 13.1391 10.6916C13.2668 10.8194 13.3307 10.9777 13.3307 11.1666V12.5C13.3307 12.8666 13.2002 13.1805 12.9391 13.4416C12.678 13.7027 12.3641 13.8333 11.9974 13.8333H3.9974ZM7.33073 5.73328L6.08073 6.98328C5.9474 7.11662 5.78906 7.18051 5.60573 7.17495C5.4224 7.1694 5.26406 7.09995 5.13073 6.96662C5.00851 6.83328 4.94462 6.67773 4.93906 6.49995C4.93351 6.32217 4.9974 6.16662 5.13073 6.03328L7.53073 3.63328C7.5974 3.56662 7.66962 3.5194 7.7474 3.49162C7.82517 3.46384 7.90851 3.44995 7.9974 3.44995C8.08629 3.44995 8.16962 3.46384 8.2474 3.49162C8.32517 3.5194 8.3974 3.56662 8.46406 3.63328L10.8641 6.03328C10.9974 6.16662 11.0613 6.32217 11.0557 6.49995C11.0502 6.67773 10.9863 6.83328 10.8641 6.96662C10.7307 7.09995 10.5724 7.1694 10.3891 7.17495C10.2057 7.18051 10.0474 7.11662 9.91406 6.98328L8.66406 5.73328V10.5C8.66406 10.6888 8.60017 10.8472 8.4724 10.975C8.34462 11.1027 8.18629 11.1666 7.9974 11.1666C7.80851 11.1666 7.65017 11.1027 7.5224 10.975C7.39462 10.8472 7.33073 10.6888 7.33073 10.5V5.73328Z" fill="#003F7C" />
+                      </g>
+                    </svg>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p className="text-[#737373] text-xs mb-6">Please upload your County Coverage & pricing sheet here.
+</p>
+                 
+                  <div className="flex justify-end items-start">
+                    <div className="flex gap-2  items-center mt-4">
+                      <p>Upload</p>
+                      <p><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <mask id="mask0_760_1312" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                          <rect y="0.5" width="16" height="16" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_760_1312)">
+                          <path d="M3.9974 13.8333C3.63073 13.8333 3.31684 13.7027 3.05573 13.4416C2.79462 13.1805 2.66406 12.8666 2.66406 12.5V11.1666C2.66406 10.9777 2.72795 10.8194 2.85573 10.6916C2.98351 10.5638 3.14184 10.5 3.33073 10.5C3.51962 10.5 3.67795 10.5638 3.80573 10.6916C3.93351 10.8194 3.9974 10.9777 3.9974 11.1666V12.5H11.9974V11.1666C11.9974 10.9777 12.0613 10.8194 12.1891 10.6916C12.3168 10.5638 12.4752 10.5 12.6641 10.5C12.853 10.5 13.0113 10.5638 13.1391 10.6916C13.2668 10.8194 13.3307 10.9777 13.3307 11.1666V12.5C13.3307 12.8666 13.2002 13.1805 12.9391 13.4416C12.678 13.7027 12.3641 13.8333 11.9974 13.8333H3.9974ZM7.33073 5.73328L6.08073 6.98328C5.9474 7.11662 5.78906 7.18051 5.60573 7.17495C5.4224 7.1694 5.26406 7.09995 5.13073 6.96662C5.00851 6.83328 4.94462 6.67773 4.93906 6.49995C4.93351 6.32217 4.9974 6.16662 5.13073 6.03328L7.53073 3.63328C7.5974 3.56662 7.66962 3.5194 7.7474 3.49162C7.82517 3.46384 7.90851 3.44995 7.9974 3.44995C8.08629 3.44995 8.16962 3.46384 8.2474 3.49162C8.32517 3.5194 8.3974 3.56662 8.46406 3.63328L10.8641 6.03328C10.9974 6.16662 11.0613 6.32217 11.0557 6.49995C11.0502 6.67773 10.9863 6.83328 10.8641 6.96662C10.7307 7.09995 10.5724 7.1694 10.3891 7.17495C10.2057 7.18051 10.0474 7.11662 9.91406 6.98328L8.66406 5.73328V10.5C8.66406 10.6888 8.60017 10.8472 8.4724 10.975C8.34462 11.1027 8.18629 11.1666 7.9974 11.1666C7.80851 11.1666 7.65017 11.1027 7.5224 10.975C7.39462 10.8472 7.33073 10.6888 7.33073 10.5V5.73328Z" fill="#003F7C" />
+                        </g>
+                      </svg>
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
+              </div>
+              
+
+
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <label className="text-[#737373] text-xs mb-6">Do you also perform Commercial Title search?</label>
+                <div className="flex justify-between item-center mt-4">
+                  <div className="flex gap-2 items-center">
+                    <label>Yes</label>
+                    <input type="checkbox" className="w-5 h-5" />
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <label>No</label>
+                    <input type="checkbox" className="w-5 h-5" />
+                  </div>
+                  <div className="flex gap-2  items-center">
+                    <p>Upload</p>
+                    <p><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_760_1312" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                        <rect y="0.5" width="16" height="16" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_760_1312)">
+                        <path d="M3.9974 13.8333C3.63073 13.8333 3.31684 13.7027 3.05573 13.4416C2.79462 13.1805 2.66406 12.8666 2.66406 12.5V11.1666C2.66406 10.9777 2.72795 10.8194 2.85573 10.6916C2.98351 10.5638 3.14184 10.5 3.33073 10.5C3.51962 10.5 3.67795 10.5638 3.80573 10.6916C3.93351 10.8194 3.9974 10.9777 3.9974 11.1666V12.5H11.9974V11.1666C11.9974 10.9777 12.0613 10.8194 12.1891 10.6916C12.3168 10.5638 12.4752 10.5 12.6641 10.5C12.853 10.5 13.0113 10.5638 13.1391 10.6916C13.2668 10.8194 13.3307 10.9777 13.3307 11.1666V12.5C13.3307 12.8666 13.2002 13.1805 12.9391 13.4416C12.678 13.7027 12.3641 13.8333 11.9974 13.8333H3.9974ZM7.33073 5.73328L6.08073 6.98328C5.9474 7.11662 5.78906 7.18051 5.60573 7.17495C5.4224 7.1694 5.26406 7.09995 5.13073 6.96662C5.00851 6.83328 4.94462 6.67773 4.93906 6.49995C4.93351 6.32217 4.9974 6.16662 5.13073 6.03328L7.53073 3.63328C7.5974 3.56662 7.66962 3.5194 7.7474 3.49162C7.82517 3.46384 7.90851 3.44995 7.9974 3.44995C8.08629 3.44995 8.16962 3.46384 8.2474 3.49162C8.32517 3.5194 8.3974 3.56662 8.46406 3.63328L10.8641 6.03328C10.9974 6.16662 11.0613 6.32217 11.0557 6.49995C11.0502 6.67773 10.9863 6.83328 10.8641 6.96662C10.7307 7.09995 10.5724 7.1694 10.3891 7.17495C10.2057 7.18051 10.0474 7.11662 9.91406 6.98328L8.66406 5.73328V10.5C8.66406 10.6888 8.60017 10.8472 8.4724 10.975C8.34462 11.1027 8.18629 11.1666 7.9974 11.1666C7.80851 11.1666 7.65017 11.1027 7.5224 10.975C7.39462 10.8472 7.33073 10.6888 7.33073 10.5V5.73328Z" fill="#003F7C" />
+                      </g>
+                    </svg>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label className="text-[#737373] text-xs mb-6">Do you have any Claims filed against your work insurance in the past?</label>
+                <div className="flex justify-between item-center mt-4">
+                  <div className="flex gap-2 items-center">
+                    <label>Yes</label>
+                    <input type="checkbox" className="w-5 h-5" />
+                  </div>
+                  <div className="flex gap-2 items-center">
+                    <label>No</label>
+                    <input type="checkbox" className="w-5 h-5" />
+                  </div>
+                  <div className="flex gap-2  items-center">
+                    <p>Upload</p>
+                    <p><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_760_1312" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
+                        <rect y="0.5" width="16" height="16" fill="#D9D9D9" />
+                      </mask>
+                      <g mask="url(#mask0_760_1312)">
+                        <path d="M3.9974 13.8333C3.63073 13.8333 3.31684 13.7027 3.05573 13.4416C2.79462 13.1805 2.66406 12.8666 2.66406 12.5V11.1666C2.66406 10.9777 2.72795 10.8194 2.85573 10.6916C2.98351 10.5638 3.14184 10.5 3.33073 10.5C3.51962 10.5 3.67795 10.5638 3.80573 10.6916C3.93351 10.8194 3.9974 10.9777 3.9974 11.1666V12.5H11.9974V11.1666C11.9974 10.9777 12.0613 10.8194 12.1891 10.6916C12.3168 10.5638 12.4752 10.5 12.6641 10.5C12.853 10.5 13.0113 10.5638 13.1391 10.6916C13.2668 10.8194 13.3307 10.9777 13.3307 11.1666V12.5C13.3307 12.8666 13.2002 13.1805 12.9391 13.4416C12.678 13.7027 12.3641 13.8333 11.9974 13.8333H3.9974ZM7.33073 5.73328L6.08073 6.98328C5.9474 7.11662 5.78906 7.18051 5.60573 7.17495C5.4224 7.1694 5.26406 7.09995 5.13073 6.96662C5.00851 6.83328 4.94462 6.67773 4.93906 6.49995C4.93351 6.32217 4.9974 6.16662 5.13073 6.03328L7.53073 3.63328C7.5974 3.56662 7.66962 3.5194 7.7474 3.49162C7.82517 3.46384 7.90851 3.44995 7.9974 3.44995C8.08629 3.44995 8.16962 3.46384 8.2474 3.49162C8.32517 3.5194 8.3974 3.56662 8.46406 3.63328L10.8641 6.03328C10.9974 6.16662 11.0613 6.32217 11.0557 6.49995C11.0502 6.67773 10.9863 6.83328 10.8641 6.96662C10.7307 7.09995 10.5724 7.1694 10.3891 7.17495C10.2057 7.18051 10.0474 7.11662 9.91406 6.98328L8.66406 5.73328V10.5C8.66406 10.6888 8.60017 10.8472 8.4724 10.975C8.34462 11.1027 8.18629 11.1666 7.9974 11.1666C7.80851 11.1666 7.65017 11.1027 7.5224 10.975C7.39462 10.8472 7.33073 10.6888 7.33073 10.5V5.73328Z" fill="#003F7C" />
+                      </g>
+                    </svg>
+                    </p>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            <div className="grid grid-cols-2 mt-5 gap-4">
+              <Input
+                labelText="Email for Order Assignment"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="Email Address"
+                className="w-full p-4"
+              />
+              <Input
+                labelText="Daily potential Volume (approx. Number)"
+                labelTextStyle="text-xs font-normal text-[#000] leading-[150%] "
+                placeHolder="Enter Number"
+                className="w-full p-4"
+              />
+            </div>
           </div>
         </div>
-       
+
         <div className="border-t-2 border-[#D4D4D4] py-2 px-6 flex justify-end">
-          <Button className="bg-[#003F7C] text-white text-center px-8 py-3 rounded-lg w-[114px] semibold placeholder-text-sm">Submit</Button>
+          <Button className="bg-[#003F7C] text-white text-center px-8 py-3 rounded-lg w-[114px] semibold placeholder-text-sm">
+            Submit
+          </Button>
         </div>
       </Modal>
     </div>

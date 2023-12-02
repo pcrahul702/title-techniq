@@ -15,10 +15,10 @@ const Banner = () => {
         />
         {/* Content */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/5">
-          <div className=" bg-black opacity-70 text-[#FAFAFA] text-center font-league-spartan text-[56px] font-normal  leading-[150%]">
+          <div className="  text-[#FAFAFA] text-center font-league-spartan text-[56px] font-normal  leading-[150%]">
             Unlock the Power of Accurate
           </div>
-          <div className="bg-black opacity-70 text-[#71B9FF] text-center font-league-spartan text-[64px] font-semibold  leading-[150%]">
+          <div className=" text-[#71B9FF] text-center font-league-spartan text-[64px] font-semibold  leading-[150%]">
             Title Searches
           </div>
         </div>
