@@ -7,5 +7,5 @@ const SEND_MAIL = "/api/sendEmail"
 
 
 export {
-  SEND_MAIL
+  SEND_MAIL, BASE_URL
 };
