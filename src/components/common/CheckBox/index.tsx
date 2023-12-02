@@ -28,14 +28,15 @@ const Checkbox = ({
   return (
     <div className={`text-base font-semibold  text-csBlue  ${wrapperClass}`}>
       <div className="flex gap-4 items-center">
-        <div className="flex items-center justify-center h-4 w-4 2xl:h-6 2xl:w-6 border border-csBlue rounded-full">
+        <div className="flex items-center justify-center h-4 w-4 2xl:h-4 2xl:w-4 border border-csBlue ">
           <input
             id={id}
-            type="Radio"
+            type="radio"
             name={name}
             value={value}
+            // checked={true}
             onClick={onClick}
-            className="appearance-none checked:h-2 checked:w-2 2xl:checked:h-3 2xl:checked:w-3 checked:bg-csSkyBlue checked:rounded-full "
+            className="appearance-none checked:h-4 checked:w-4 2xl:checked:h-4 2xl:checked:w-4 checked:bg-csSkyBlue  "
           />
         </div>
         <label htmlFor={id}>{label}</label>
